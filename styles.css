@@ -23,3 +23,20 @@ body{
     font-size: 20px;
     color:rgb(147, 84, 205) ;
 } 
+#container-cabecera{
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0.2rem;
+    justify-content: space-between;
+}
+#min-Navbar{
+    justify-content: space-between;
+}
+#min-Navbar a{
+    margin: 0 5px;
+    font-family: sans-serif;
+    color:rgb(147, 84, 205) ;
+    text-decoration: none;
+    font-size: 20px;
+}
