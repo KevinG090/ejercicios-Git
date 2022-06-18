@@ -1,1 +1,3 @@
-Este es un documento de texto 
+Este es un documento de texto en el cual me voy a presentar:
+
+Soy Kevin Guevara, un programador q ue va a llegar a ser un gran profesional 
