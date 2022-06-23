@@ -91,7 +91,6 @@ body{
 
 /* --- 3cer contenedor --- */
 #cont3{
-    width: 100%;
     background-color: var(--white-color);
     padding: 1rem;
     border: 5px solid var(--main-color) ;
