@@ -67,6 +67,15 @@ Este repositorio tiene como objetivo poner en practica los diferentes comandos q
 * gitk
 * vi (*nombre del archivo*)
 * git rm --cached (*nombre archivo*)
+* git rebase (*nombre de la rama*)
+<br>
+
+* git stash 
+* git stash save "mensaje identificador del elemento del stashed"
+* git stash list
+* git stash pop  -> recuperar los cambios del ultimo stash
+* git stash drop -> elimina el stash 
+para mas ir a: https://platzi.com/clases/1557-git-github/19984-stash/
 
 ### Extras  :checkered_flag:
 * para salir de la consola ***VIM*** tecleamos **ESC+SHIFT+Z+Z**
