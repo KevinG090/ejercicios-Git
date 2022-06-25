@@ -14,6 +14,8 @@ Este repositorio tiene como objetivo poner en practica los diferentes comandos q
 * git branch (*nombre de la nueva rama*)
 * git checkout (*nombre de la rama*)
 * cd (*nombre archivo/capeta*)
+* cd ..
+* git clean
 * git status
 * git log
 * code .
@@ -51,7 +53,14 @@ Este repositorio tiene como objetivo poner en practica los diferentes comandos q
 * alias
 * alias (*nombre del alias*)="(*codigo/comando*)"
 
-#### Avanzado 
+#### Avanzado
 * gitk
 * vi (*nombre del archivo*)
 * git rm --cached (*nombre archivo*)
+
+####Extras
+* para salir de la consola ***VIM*** tecleamos **ESC+SHIFT+Z+Z**
+* para limpiar la consola podemos teclear **Ctrl+L**
+
+
+
