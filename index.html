@@ -5,38 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Practica Git</title>
+    <title>FreeCodeCamp</title>
 </head>
 <body>
-    <div id="cont1" class="container">
-        <div id="cont-cabecera">
-            <img id="logo" src="images/logos.png">
-            <h2>LAGB INGENIERIA</h2>
-            <div id="min-Navbar">
-                <a href="#">inicio.</a>
-                <a href="#">introduccion.</a>
-                <a href="#">final.</a>
+    <header id="header">
+        <div class="logo">
+            <p id="header-img">NOMBRE</p>
+        </div>
+        <nav id="nav-bar">
+            <ul id="ul">
+                <li>
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#galeria">galeria</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#acerca">Acerca de</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#form">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="inicio">
+        <div id="texto-e-imagen-inicio">
+            <div id="texto-inicio">
+                <h1 class="titulo1">ESTE ES UN TITULO</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum deleniti totam repellat voluptatibus id asperiores ut corporis? A molestias minima temporibus praesentium molestiae, facere.</p>
+                <a href="#" class="comprar-ahora">Comprar ahora</a>
+                <a href="#" class="ver-mas">Ver mas</a>
+            </div>
+            <div id="imagen-inicio">
+                <img class="imagen" src="images/inicio.jpg" alt="">
             </div>
         </div>
-        <div id="post">
-            <h1>El Mejor Blog Post</h1>
-            <p>Y este es un parrafo de inicio donde puedes escribir lo que gustes</p>
+    </div>
+    <div class="container" id="galeria">
+        <div id="espacio-video" class="espacios">
+            <h2 class="titulos">Galeria</h2>
+            <!-- <iframe id="video" height="350px" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
         </div>
     </div>
-    <div id="cont2" class="container" >
-        <div id="item1">
-            <h2>Introduccion</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident odio, molestiae itaque amet modi obcaecati sint laboriosam eius delectus illo, ea hic maiores voluptate iure quisquam accusamus laborum cum fuga saepe fugiat reprehenderit ipsa? Nulla sed qui voluptates praesentium.</p>
-        </div>
-        <div  id="item2">
-            <h2>Que hacemos</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto minima culpa, reprehenderit quibusdam sapiente velit iure nostrum? Esse dolor voluptas aperiam eaque neque veritatis non, corporis quos minus sed quibusdam!</p>
+    <div class="container" id="acerca">
+        <div id="contenedor-acerca-de" class="espacios">
+            <h2 class="titulos">Acerca de</h2>
+            <div id="espacio-acerca-de">
+                <div id="contenedor-texto-acerca-de">
+                    <h3><span>1</span>Que hacemos?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, incidunt harum culpa magnam quibusdam labore, cum tempora odit delectus minus pariatur praesentium, error molestiae voluptates reiciendis fugiat modi? Saepe, laboriosam?</p>
+                    <h3><span>2</span>Experiencia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, atque possimus modi sed neque voluptate, fugiat amet nisi sapiente fugit porro, totam consectetur cupiditate id. Aspernatur odio perferendis quisquam aut.</p>
+                </div>
+                <div id="contenedor-imagen-acerca-de">
+                    <img id="imagen-acerca-de" src="images/acercaDe.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
-    <div id="cont3" class="container">
-        <p>@Kevin090</p>
+    <div class="container" id="form">
+        <div id="contenedor-contacto" class="espacios">
+            <h2 class="titulos">Contactanos</h2>
+            <div id="espacio-contacto">
+                <div id="contenedor-informacion">
+                    <h3>Informacion de Contacto</h3>
+                    <div id="espacio-texto-info">
+                        <h3>Correo :</h3>
+                        <p>kevin090@gmail.com</p>
+                        <h3>CELULAR :</h3>
+                        <p>3234568220</p>
+                    </div>
+                </div>
+                <div id="contenedor-formulario">
+                    <h3 class="titulos">Enviar mensaje</h3>
+                    <form id="formulario">
+                        <div class="espacio-form nombre">
+                            <label id="nombre-label" for="name">Nombre Completo<span>*</span></label>
+                            <input 
+                            type="text"
+                            name="name"
+                            id="name"
+                            class="input-form"
+                            placeholder="Escribe tu nombre "
+                            required
+                            >
+                            <span class="linea"></span>
+                        </div>
+                        <div class="espacio-form telefono">
+                            <label id="cell-label" for="cell">Telefono/Celular<span>*</span></label>
+                            <input 
+                            type="number"
+                            name="cell"
+                            id="cell"
+                            class="input-form"
+                            placeholder="Escribe tu numero "
+                            required
+                            >
+                            <span class="linea"></span>
+                        </div>
+                        <div class="espacio-form correo">
+                            <label id="email-label" for="email">Correo Electronico<span>*</span></label>
+                            <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="input-form"
+                            placeholder="Escribe tu correo "
+                            required
+                            >
+                            <span class="linea"></span>
+                        </div>
+                        <div class="espacio-form mensaje">
+                            <label id="mensaje-label" for="mensaje">Mensaje<span>*</span></label>
+                            <textarea 
+                            type="text"
+                            name="mensaje"
+                            id="mensaje"
+                            class="input-form"
+                            placeholder="Escribe tu nombre "
+                            required
+                            ></textarea>
+                        </div>
+                        <div class="espacio-form submit">
+                          <button type="submit" id="submit" class="button-submit">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>    
+        </div>
     </div>
-    
-
+    <script src="code.js"></script>
 </body>
 </html>
