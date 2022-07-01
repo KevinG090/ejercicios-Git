@@ -4,21 +4,26 @@ const imagen_inicio = document.querySelector("#imagen-inicio");
 
 const nav_bar = document.querySelector("#nav-bar");
 const ul = document.querySelector("#ul")
-const menu = document.createElement("button");
-menu.classList.add("menu")
-nav_bar.appendChild(menu)
 
-const div = document.createElement("div");
-div.classList.add("div-menu")
-menu.insertAdjacentElement('afterend',div)
+const menu = document.querySelector(".button")
+const contenedor_sideBar = document.querySelector(".contenedor-sideBar")
+const sideBar = document.querySelector(".sideBar")
 
-for ( i = 0 ; i < 4 ; i++ ){
-   const p = document.createElement("P")
-   p.classList.add(`texto-menu`,`item${i+1}`)
-   div.appendChild(p)
-}
+/*
+   const menu = document.createElement("button");
+   menu.classList.add("menu")
+   nav_bar.appendChild(menu)
 
+   const div = document.createElement("div");
+   div.classList.add("div-menu")
+   menu.insertAdjacentElement('afterend',div)
 
+   for ( i = 0 ; i < 4 ; i++ ){
+      const p = document.createElement("P")
+      p.classList.add(`texto-menu`,`item${i+1}`)
+      div.appendChild(p)
+   }
+*/
 
 const start = () => {
    value = false ;
@@ -31,7 +36,8 @@ const start = () => {
 }
 const navBar = () => {
    if (screen.width < 600 ){
-      ul.style='display:none';
+      // ul.style='display:none';
+      sideBar.insertAdjacentElement("afterend",ul)
       menu.style='display:flex';
    }
    else if (screen.width >= 600 ){
@@ -48,10 +54,16 @@ let valor = false ;
 menu.addEventListener('click',()=>{
    if (valor == false){
       valor = true;
-      div.style='left:0'
+      contenedor_sideBar.style='left:0'
    }
    else if (valor == true){
-      div.style='left:-300px'
       valor = false;
+      contenedor_sideBar.style='left:-300px'
+   }
+})
+ul.addEventListener('click',()=>{
+   if (valor == true){
+      valor = false;
+      contenedor_sideBar.style='left:-300px'
    }
 })

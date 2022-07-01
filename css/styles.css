@@ -140,7 +140,7 @@ body{
     #nav-bar {
         width: 60%;
     }
-    .menu{
+    .button{
         display: flex;
         position: fixed;
         width: 30px;
@@ -149,7 +149,7 @@ body{
         left: 20px;
         z-index: 2;
     }
-    .div-menu{
+    .contenedor-sideBar{
         width: 200px;
         height: 100%;
         position: fixed;
@@ -157,6 +157,14 @@ body{
         left: -300px;
         background: var(--secondary-color);
         z-index: 1;
+    }
+    #ul {
+        margin-top:50px ;
+    }
+    #ul li {
+        width: 90%;
+        margin: 30px auto;
+        list-style: none;
     }
 }
 
