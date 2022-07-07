@@ -54,16 +54,19 @@ let valor = false ;
 menu.addEventListener('click',()=>{
    if (valor == false){
       valor = true;
-      contenedor_sideBar.style='left:0'
+      contenedor_sideBar.style='left:0';
+      menu.style='background-color: var(--secondary-color)';
    }
    else if (valor == true){
       valor = false;
-      contenedor_sideBar.style='left:-300px'
+      contenedor_sideBar.style='left:-300px';
+      menu.style='background-color: var(--main-color)';
+      
    }
 })
 ul.addEventListener('click',()=>{
    if (valor == true){
       valor = false;
-      contenedor_sideBar.style='left:-300px'
+      contenedor_sideBar.style='left:-300px';
    }
 })

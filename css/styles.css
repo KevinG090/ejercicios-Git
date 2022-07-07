@@ -140,14 +140,19 @@ body{
     #nav-bar {
         width: 60%;
     }
-    .button{
+    .button {
         display: flex;
         position: fixed;
+        border: none;
+        background-color: var(--main-color);
         width: 30px;
         height: 30px;
         top: 7px;
         left: 20px;
         z-index: 2;
+    }
+    .button #bars{
+        font-size: 30px;
     }
     .contenedor-sideBar{
         width: 200px;
