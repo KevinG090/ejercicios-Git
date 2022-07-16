@@ -1,7 +1,7 @@
 # Ejercicios-Git 
 Este repositorio tiene como objetivo poner en practica los diferentes comandos que nos puede facilitar la comunicacion entre git y github :tw-1f603:  
 
->Considero importante profundizar en git (control de versiones) ya que en el tema laboral :briefcase: es usado con fecuencia.
+>Considero importante profundizar en git (control de versiones) ya que en el tema laboral :briefcase: es usado con frecuencia.
 
 ## Comandos para tener en cuenta :dart:
 
